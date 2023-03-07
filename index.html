@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>전상준 블로그</title>
+  <title>전상준</title>
 
   <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
   <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
@@ -56,11 +56,11 @@
 <body>
 
   <div id="viewer-1"></div>
-
   <ul>
-    <li><a href="javascript:showPage(3);">3번글</a></li>
-    <li><a href="javascript:showPage(2);">2번글</a></li>
-    <li><a href="javascript:showPage(1);">1번글</a></li>
+    <li><a href="javascript:showPage(4)">4번글</a> </li>
+    <li><a href="javascript:showPage(3)">3번글</a> </li>
+    <li><a href="javascript:showPage(2)">2번글</a> </li>
+    <li><a href="javascript:showPage(1)">1번글</a> </li>
   </ul>
 
   <script>
@@ -86,6 +86,7 @@
       return { toHTMLRenderers };
     }
 
+    // id가 'viewer-1-template' 인 엘리먼트를 찾는다.
     const viewer1MarkdownSource = "로딩중...";
 
     const viewer1 = Editor.factory({
@@ -115,6 +116,8 @@
         })
     }
 
+    showPage(4);
+    
   </script>
 
 </body>
